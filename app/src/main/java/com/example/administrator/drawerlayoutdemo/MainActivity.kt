@@ -15,5 +15,9 @@ class MainActivity : AppCompatActivity() {
         val actionBarDrawerToggle=ActionBarDrawerToggle(this,drawer_layout,toolbar,R.string.abc_action_bar_home_description,R.string.abc_action_bar_home_description)
         actionBarDrawerToggle.syncState()
         drawer_layout.setDrawerListener(actionBarDrawerToggle)
+        nav_view.setNavigationItemSelectedListener {
+
+            true
+        }
     }
 }
